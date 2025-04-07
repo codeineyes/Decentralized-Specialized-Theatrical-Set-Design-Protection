@@ -1,0 +1,34 @@
+[project]
+name = 'Decentralized-Specialized-Theatrical-Set-Design-Protection'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.attribution-tracking]
+path = 'contracts/attribution-tracking.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.design-registration]
+path = 'contracts/design-registration.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.licensing]
+path = 'contracts/licensing.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.production-verification]
+path = 'contracts/production-verification.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
